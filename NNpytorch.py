@@ -30,7 +30,7 @@ output_size = 1
 num_epochs = 1000
 learning_rate = 0.01
 
-# Generate training data
+# create training data
 x_train = np.linspace(-2 * np.pi, 2 * np.pi, 100)  # 100 points evenly spaced between -2π and 2π
 y_train = np.sin(x_train)  # Compute the sine of the training points
 x_train = torch.Tensor(x_train).view(-1, 1)  # Convert training data to PyTorch tensors and reshape to column vectors
